@@ -32,9 +32,9 @@ In the table below I have listed all the exersizes. The first one with a very ba
 
 Each of the exercises is contained in its own folder containing a README.md detailing the goals of the exersize along with a description of the included files. Links to any relevant resources and a pointer to the appopriate place in the workshop slides can also be found here.
 
-| Start tag | End tag | Description | Topic keywords |
-|-|-|-|-|
-| inline-css__start | inline-css__end | Inlining CSS | basics, inclusion |
+| Exercise # | Start tag | End tag | Description | Topic keywords |
+|-|-|-|-|-|
+| 1 | inline-css__start | inline-css__end | Inlining CSS | basics, inclusion |
 
 ## Resources
 
