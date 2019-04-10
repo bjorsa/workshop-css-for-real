@@ -47,6 +47,7 @@ In addition, I have gathered a set of useful resources that I'm including in thi
 | Firefox | https://www.mozilla.org/en-US/firefox/new/ | Download the Mozilla Firefox browser |
 | Visual Studio Code | https://code.visualstudio.com/ | Download the Visual Studio Code editor (Win / MacOS / Linux) |
 | Atom | https://atom.io/ | Download the Atom editor |
-
+| MDN CSS Docs | https://developer.mozilla.org/en-US/docs/Web/CSS | Mozilla Developer Network documentation for CSS |
+| Coloors | https://coolors.co | Online color theme generator |
 
 I have tried to highlight resources again as they become relevant for some particular exersize.
