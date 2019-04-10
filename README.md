@@ -7,12 +7,16 @@ You might also find this material useful if you're in the process of learning we
 
 It is beyond the scope of this workshop to go into the configuration of individual tools for developing and maintaining CSS and web applications in general. That being said, to follow along in the workshop material, you are going to need some things.
 
-### Editor
+### Editor of choice
 
 Any IDE where you are comfortable working will do, I will however recommend a couple of options.
 
 * __Visual Studio Code__ - A good, free and cross platform option for working with web development and scripting.
 * __Atom__ - Free, potent editor with a huge number of capabilities available as plugins.
+
+### Browsers
+
+I would recommend that you at least install Chrome, but preferrably other browsers as well so that you can better examine the results of your CSS code. The examples illustrated as part of this workshop will mostly be using chrome since that is the browser that I find to have the most useful debugging tools when it comes to CSS and web development in general.
 
 ## Exersizes
 
