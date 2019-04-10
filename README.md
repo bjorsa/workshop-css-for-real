@@ -34,14 +34,14 @@ Each of the exercises is contained in its own folder containing a README.md deta
 
 | Exercise # | Start tag | End tag | Description | Topic keywords |
 |-|-|-|-|-|
-| 1 | inline-css__start | inline-css__end | Inlining CSS | basics, inclusion |
+| 1 | inline-css__start | inline-css__end | Inlining CSS | basics, inclusion, inlining |
 
 ## Resources
 
 In addition, I have gathered a set of useful resources that I'm including in this README that might be of use when you need to look something up or otherwise have some web design need that you need to adress. This includes generators for font size, color schemes and more.
 
 | Resource | Link                                                        | Description |
-| -------- | ----------------------------------------------------------- | ----------- |
+|-|-|-|
 | CSS Home | https://www.w3.org/Style/CSS/                               | The CSS Home page where you can find CSS related news as well as information about the current standard and the CSS working group |
 | Chrome | https://www.google.com/intl/en/chrome/ | Download the Google Chrome browser |
 | Firefox | https://www.mozilla.org/en-US/firefox/new/ | Download the Mozilla Firefox browser |
