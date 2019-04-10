@@ -16,7 +16,7 @@ As an example web page I have used a fictive business web page of a paint supply
 In the table below I have listed all the exersizes. The first one with a very basic HTML page tasking you to introduce your very first CSS into the page. Ranging through a wide variety of topics the following exersizes lets you examine diferent aspects of CSS.
 
 | Start tag | End tag | Description | Topic keywords |
-|-|-|-|-|-|
+|-|-|-|-|
 | first-css__start | first-css__end | Inlining CSS | basics, inclusion |
 
 ## Resources
