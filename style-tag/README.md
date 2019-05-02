@@ -63,3 +63,48 @@ section {
 Also see to it that the text of our main section are all set to a nice color of your choice.
 
 Go have a look at: https://coolors.co or some other color guide of your choice if you need some inspiration.
+
+## The solution
+
+The first step here was pretty straight forward I think. Simply add the style-tag as described above.
+
+```html
+<html>
+    <head>
+        <title>...</title>
+        .
+        .
+        <style>
+            section {
+                background: #EC9A29;
+            }
+        </style>
+        .
+        .
+    </head>
+</html>
+```
+
+To solve the part with changing the text color I added the following rule.
+
+```css
+main {
+    color: #333;
+}
+```
+
+As for resizing the images I used the following.
+
+```css
+img {
+    width: 25%;
+}
+```
+
+Again, note that this approach is not the recommended way for several reasons.
+
+* First of all, it is not secure, allowing styles to be specified as part of a HTML document can have adverse security implications. Exactly how to prevent this and to what degree this matters is beyond the scope of this workshop. If you want to know more, please have a read at: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
+* Sharing CSS rules in multiple HTML files is usually beneficial in medium to large projects, and this is not possible if you apply styles directly to the HTML page. Every time the same style needs to be applied to some different HTML page you need to rewrite the same set of CSS declarations.
+* It is very hard to maintain. Changing some aspect of your web page might involve finding the relevant rules on 10s to 100s of different pages, at least when your project is starting to grow.
+
+In the next exercise, we'll focus on how to overcome this by externalizing the CSS into a separate file.
