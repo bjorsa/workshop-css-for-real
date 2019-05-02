@@ -22,4 +22,21 @@ If you need some inspiration picking a color theme for your website, go have a l
 
 ## The task
 
-Please add some nice background color to the _section_-element in the html document.
+Please add some nice background color to the _section_-element in the html document. If you feel up to it, experimenting with adding some additional style declarations.
+
+## The solution
+
+As described above I added a _style_-attribute to the _section_ opening tag as follows:
+
+```html
+<section style="background: #EC9A29;"/>
+```
+
+Note that this approach is not the recommended way for several reasons.
+
+* First of all, it is not secure, allowing styles to be specified inline on elements can have adverse security implications. Exactly how to prevent this and to what degree this matters is beyond the scope of this workshop. If you want to know more, please have a read at: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
+* No reuse is possible if you apply styles directly to the elements of your HTML page. Every time the same style needs to be applied you need to rewrite the same set of CSS declarations.
+* It is verbose, often multiple CSS declarations are needed to get the desired effect, applying these every time directly in the HTML file obscures the structure of the document.
+* It is very hard to maintain. Changing some aspect of your web page might involve finding the relevant styles on 100s of separate elements, at least when your project is starting to grow.
+
+In the next exercise we will explore another way of including the CSS into the HTML page.
