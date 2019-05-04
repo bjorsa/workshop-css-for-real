@@ -54,5 +54,6 @@ In addition, I have gathered a set of useful resources that I'm including in thi
 | MDN HTML Docs      | https://developer.mozilla.org/en-US/docs/Web/HTML | Mozilla Developer Network documentation for HTML |
 | Coloors            | https://coolors.co                                | Online color theme generator |
 | Optimizilla        | https://imagecompressor.com/                      | Optimizilla Online Image Compressor (somewhat add heavy, but really useful) |
+| Specifity Calculator by Keegan Street | https://specificity.keegan.st/ | Online Specifity Calculator that can be used to examine selector expressions for specifity |
 
 I have tried to highlight resources again as they become relevant for some particular exersize.
