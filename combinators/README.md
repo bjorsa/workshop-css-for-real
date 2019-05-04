@@ -80,3 +80,19 @@ The white color which we previously applied to the h1 element inside the section
 This is a bit awkward since that class will probably never get used anywhere else. Change the CSS so that the h1 element is instead selected using a combinator.
 
 Also, the img elements inside of the section element with id _retailer-section_ is targeted using only the element selector, fix this using combinators.
+
+## The solution
+
+Using our section id assignment, we can rewrite the selectors for the img elements and heading-section title to.
+
+```css
+#heading-section h1 {
+    color: white;
+}
+
+#retailer-section img {
+    width: 25%;
+}
+```
+
+Also, once this is done, the heading-section__title class can be removed from the HTML file.
