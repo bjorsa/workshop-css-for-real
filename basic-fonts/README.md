@@ -96,3 +96,25 @@ The font family specified after the comma (,) sign is the fallback font, should 
 ## The task
 
 Please apply a different font to match the style of your web-site to the h-level elements of the page using google fonts. Make sure that it uses a fallback style that doesn't make the page look awful.
+
+## The solution
+
+I've added a link to the HTML page above the link element that I've used to include the main.css file.
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+```
+
+In the main.css file, I've added the _font-family_ property to the h-level element selector that was already there.
+
+```css
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color: #530100;
+    font-family: Lato, sans-serif;
+}
+```
