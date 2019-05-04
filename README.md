@@ -35,6 +35,9 @@ Each of the exercises is contained in its own folder containing a README.md deta
 | Exercise # | Start tag | End tag | Description | Topic keywords |
 |-|-|-|-|-|
 | 1 | inline-css__start | inline-css__end | Inlining CSS | basics, inclusion, inlining |
+| 2 | style-tag__start | style-tag__end | Applying CSS using a style tag | basics, inclusion, embedded |
+| 3 | externalizing-css__start | externalizing-css__end | Externalizing CSS rules into a separate file | basics, inclusion |
+| 4 | basic-selectors__start | basic-selectors__end | Basic selector types | basics |
 
 ## Resources
 
@@ -42,12 +45,14 @@ In addition, I have gathered a set of useful resources that I'm including in thi
 
 | Resource | Link                                                        | Description |
 |-|-|-|
-| CSS Home | https://www.w3.org/Style/CSS/                               | The CSS Home page where you can find CSS related news as well as information about the current standard and the CSS working group |
-| Chrome | https://www.google.com/intl/en/chrome/ | Download the Google Chrome browser |
-| Firefox | https://www.mozilla.org/en-US/firefox/new/ | Download the Mozilla Firefox browser |
-| Visual Studio Code | https://code.visualstudio.com/ | Download the Visual Studio Code editor (Win / MacOS / Linux) |
-| Atom | https://atom.io/ | Download the Atom editor |
-| MDN CSS Docs | https://developer.mozilla.org/en-US/docs/Web/CSS | Mozilla Developer Network documentation for CSS |
-| Coloors | https://coolors.co | Online color theme generator |
+| CSS Home           | https://www.w3.org/Style/CSS/                     | The CSS Home page where you can find CSS related news as well as information about the current standard and the CSS working group |
+| Chrome             | https://www.google.com/intl/en/chrome/            | Download the Google Chrome browser |
+| Firefox            | https://www.mozilla.org/en-US/firefox/new/        | Download the Mozilla Firefox browser |
+| Visual Studio Code | https://code.visualstudio.com/                    | Download the Visual Studio Code editor (Win / MacOS / Linux) |
+| Atom               | https://atom.io/                                  | Download the Atom editor |
+| MDN CSS Docs       | https://developer.mozilla.org/en-US/docs/Web/CSS  | Mozilla Developer Network documentation for CSS |
+| MDN HTML Docs      | https://developer.mozilla.org/en-US/docs/Web/HTML | Mozilla Developer Network documentation for HTML |
+| Coloors            | https://coolors.co                                | Online color theme generator |
+| Optimizilla        | https://imagecompressor.com/                      | Optimizilla Online Image Compressor (somewhat add heavy, but really useful) |
 
 I have tried to highlight resources again as they become relevant for some particular exersize.
