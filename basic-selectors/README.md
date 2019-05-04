@@ -75,3 +75,42 @@ Also our heading elements (h1, h2, ...) tags should stand stand out from the res
 You might want to look into some online color tool to help with this operation, for instance: https://www.hexcolortool.com
 
 This makes the heading section title meld into the background since it is now the same color base as the background element, mark the heading section tag with a class and apply a white color to the text of the title to increase the contrast.
+
+## The solution
+
+There are a number of ways to go about this. I chose to assign an id to each of the different section elements.
+
+```html
+    <main>
+        <section id="heading-section">
+            <h1>A Splash of Colorisious</h1>
+        </section>
+        <section id="retailer-section">
+            .
+            .
+        </section>
+    </main>
+```
+
+I then applied the styling by changing the section element rule to an identifier selector rule and adding a new rule for the title element in the heading section, by using a class. Another rule was added for all the h-level elements specifying the default color.
+
+```css
+#heading-section {
+    background: #EC9A29;
+}
+
+.heading-section__title {
+    color: white;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color: #530100;
+}
+```
+
+As you probably notice, the rule for the h-level elements looks a bit strange. The comma separated list of selectors is simply shorthand for specifying the same properties separately for each selector. More on this in later exercises.
