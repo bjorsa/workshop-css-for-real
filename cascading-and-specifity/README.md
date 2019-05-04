@@ -52,7 +52,7 @@ The order from lowest to highest is
 0. universal selector (*) has no effect on specifity
 1. element and ::pseudo-element selectors
 2. .class, :pseudo-class and [attribute] selectors
-3. #id selectors
+3. \#id selectors
 4. inline styles
 
 This might seem simple enough, but will get a little bit more tricky when we start using combined selectors and introduce inheritance into the mix. More on that later.
@@ -66,3 +66,49 @@ There is a nice Specifity calculator that gives you visual cues about how the sp
 Please introduce a rule structure similar to the above in your CSS file and then examine your web page using the inspector in Chrome. Document what you see.
 
 Clean up and restore your CSS.
+
+## The findings
+
+As you might have noticed rules are listed in Chrome ordered by Specifity and the order in which they take effect. Reading the rules starting from top to bottom in for example the h1 tag marked with the header-section__title class and using the following css.
+
+```css
+h1 {
+    color: magenta;
+    font-weight: 700;
+}
+
+.header-section__title {
+    color: green;
+}
+
+h1 {
+    color: red;
+}
+```
+
+would produce a listing similar to the following.
+
+```css
+element.style {
+}
+```
+```css
+.header-section__title {
+    color: green;
+}
+```
+```css
+h1 {
+    color: red;
+}
+```
+
+The color property would be presented in a strikethrough font, as would the color property of the last rule.
+```css
+h1 {
+    color: magenta;
+    font-weight: 700;
+}
+```
+
+These rules are then followed by some browser specifics that are applied to the h1 element by default.
