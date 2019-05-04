@@ -32,3 +32,31 @@ Move the color property from the rule with the main element selector to a new ru
 Moreover, remove the italicized style from the address tags.
 
 Make sure that the font family that we applied to the h-level elements are not overridden, and have a look in the inspect view of Chrome to see how the inherited properties are applied.
+
+## The solution
+
+For the first task, moving the color property from the main element rule to a body selector rule, this was pretty straight forward.
+
+```css
+body {
+    color: #333;
+}
+```
+
+Simply change the selector on the main selector rule to body.
+
+The second task was also nothing new, I selected the Open Sans font from google fonts and added it to the body selector rule 
+```css
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+```
+
+Overriding the italicized style in the address tags was accomplished using the following CSS.
+
+```css
+address {
+    font-style: normal;
+}
+```
