@@ -3,23 +3,11 @@ body {
     color: #333;
 }
 
-#heading-section {
-    background: #EC9A29;
-}
-
-.heading-section__title {
-    color: white;
-}
-
-img {
-    width: 25%;
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
     color: #530100;
     font-family: Lato, sans-serif;
@@ -27,4 +15,16 @@ h6 {
 
 address {
     font-style: normal;
+}
+
+#heading-section {
+    background: #EC9A29;
+}
+
+#heading-section h1 {
+    color: white;
+}
+
+#retailer-section img {
+    width: 25%;
 }
