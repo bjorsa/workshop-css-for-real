@@ -142,3 +142,72 @@ Also remove the padding and margins from the ul element.
 This is starting to look decent now.
 
 Now align both the image link, the Colorisious link and the navigation bar items on the same line. Create some spacing between the navigation bar items and the Colorisious link.
+
+## The solution
+
+I added some class markings to the HTML as follows.
+
+```html
+<section id="heading-section">
+    <div>
+        <div>
+            <a href="index.html">
+                <img alt="Colorisious" src="../images/logo-small-min.png"/>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="products/index.html">Products</a>
+                </li>
+                <li>
+                    <a href="testimonials/index.html">Our Customers</a>
+                </li>
+                <li>
+                    <a href="contact-us/index.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1>A Splash of Colorisious</h1>
+</section>
+```
+
+First of for the CSS changes, the image was reduced in size by
+
+```css
+.navigation__start img {
+    height: 30px;
+}
+```
+
+The link items were aligned on the same line and some space added using the following.
+
+```css
+.navigation__items ul > li {
+    display: inline-block;
+    margin-left: 10px;
+}
+```
+
+Then the ul element rule was created as follows to remove padding and margins.
+
+```css
+.navigation__items ul {
+    padding: 0;
+    margin: 0;
+}
+```
+
+Finally to get it all to apprear on the same line and spaced apart I added the following.
+
+```css
+.navigation__start {
+    display: inline-block;
+}
+
+.navigation__items {
+    display: inline-block;
+    margin-left: 45px;
+}
+```

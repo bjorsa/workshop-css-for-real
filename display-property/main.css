@@ -35,3 +35,26 @@ address {
 #retailer-section img {
     width: 25%;
 }
+
+.navigation__start {
+    display: inline-block;
+}
+
+.navigation__start img {
+    height: 30px;
+}
+
+.navigation__items {
+    display: inline-block;
+    margin-left: 45px;
+}
+
+.navigation__items ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__items ul > li {
+    display: inline-block;
+    margin-left: 10px;
+}
