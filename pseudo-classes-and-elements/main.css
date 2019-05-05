@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #530100;
+    font-family: Lato, sans-serif;
+}
+
+address {
+    font-style: normal;
+}
+
+#heading-section {
+    background: #EC9A29;
+    height: 200px;
+    padding: 20px;
+}
+
+#heading-section h1 {
+    color: white;
+}
+
+#retailer-section img {
+    width: 25%;
+}
+
+.navigation__start {
+    display: inline-block;
+}
+
+.navigation__start img {
+    height: 30px;
+}
+
+.navigation__items {
+    display: inline-block;
+    margin-left: 45px;
+}
+
+.navigation__items ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__items ul > li {
+    display: inline-block;
+    margin-left: 10px;
+}
