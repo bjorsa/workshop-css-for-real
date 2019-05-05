@@ -18,6 +18,22 @@ h6 {
     font-family: Lato, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #EC9A29;
+    padding-bottom: 2px;
+}
+
+a:hover,
+a:active {
+    border-bottom: 3px solid #333;
+}
+
+a.image-link:hover,
+a.image-link:active {
+    border: none;
+}
+
 address {
     font-style: normal;
 }
@@ -25,15 +41,30 @@ address {
 #heading-section {
     background: #EC9A29;
     height: 200px;
-    padding: 20px;
 }
 
 #heading-section h1 {
     color: white;
+    padding: 20px;
 }
 
 #retailer-section img {
     width: 25%;
+}
+
+.navigation {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    padding: 20px;
+}
+
+.navigation a {
+    font-weight: 700;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    border-color: white;
 }
 
 .navigation__start {

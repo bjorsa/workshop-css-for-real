@@ -90,3 +90,76 @@ Mark the #heading-section link that surrounds the image with some class so that 
 Give the links some bottom padding as well to add some extra space between the link text and the border that appears.
 
 Override the color choices for the links inside of the navigation bar using a white color for both the text and border when you hover over them, as well as making them bold.
+
+## The solution
+
+First of, restyling the links to get rid of the underline on the text and using the same color as the background of the #heading-section should be pretty straight forward.
+
+```css
+a {
+    text-decoration: none;
+    color: #EC9A29;
+}
+```
+
+Next we added the border that should underline the links on hover, at the same time taking care not to target the image link.
+
+In the HTML file I marked the image link with a class _.image-link_.
+
+```html
+<a href="index.html" class="image-link"><img alt="Colorisious" src="../images/logo-small-min.png"/></a>
+```
+
+Next we alter the a element selector rule and add some behaviour for the a:hover and a:active states.
+
+```css
+a {
+    text-decoration: none;
+    color: #EC9A29;
+    padding: 2px;
+}
+
+a:not(.image-link):hover,
+a:not(.image-link):active {
+    border-bottom: 3px solid #333;
+}
+```
+
+A padding of 2px was added along with the border that should appear when hovering or having a link active. 
+The :not(.image-link) pseudo class was added to shield the image link.
+
+The next task, overriding the color choices for the links in the navigation bar and making them bold was accomplished by.
+
+```css
+.navigation a {
+    font-weight: 700;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    border-color: white;
+}
+```
+
+Note that the expression "a:not(.image-link):hover" has exactly the same specificity as ".navigation a:hover" which means that this only works when the 
+".navigation a:hover" rule is specified later in the file. Try changing the order of the declarations and observe the effect.
+
+This might be a drawback of overusing pseudo classes, they do set a rather high specifity and can be complicated to read.
+
+There is a simpler way of stating the same thing, maybe you even ended up with the following CSS?
+
+```css
+a:hover,
+a:active {
+    border-bottom: 3px solid #333;
+}
+
+a.image-link:hover,
+a.image-link:active {
+    border: none;
+}
+```
+
+This has multiple benefits. First of all it reduces the specificity of the general link state declarations to the bare minimum, making them easier to override where needed.
+And secondly, makes the CSS code much easier to read. Note that we no longer have the case where ordering matters in our CSS file since the selectors now have the proper specificity for what we want to achieve. 
