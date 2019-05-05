@@ -118,3 +118,26 @@ and then examine the #heading-section and wrapped h1 elements once again
 We will talk more about shorthand properties in a later exercise.
 
 Finally give the #heading-section a width of 100%, notice that this leaves the web page in a bit of an odd state with the horizontal scroll bar showing at the bottom of the browser window. This has to do with the box-sizing model which we'll be revisiting as well in a later exercise to fix the problem you are seeing.
+
+## The solution
+
+The modified CSS for the #heading-section selector rule was all given as part of the task and looks like this.
+
+```css
+#heading-section {
+    background: #EC9A29;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    width: 100%;
+}
+```
+What you may have noticed is that the height of the element as reported in the box model depiction has a 
+content height of 200px, but hovering over the element using the selection tool reports that the element is 250px high.
+
+This is because the instruction to give it a height of 200px refers to only the content height, on top of this padding and border sizes are added (2 x 5px + 2 x 20px = 50px).
+
+The same goes for the width instruction that we gave, the 100% refers to the full width of the surrounding main element. 
+Again, padding and border sizes are added making the #heading-section element 50 pixels wider than it's parent (hence the horizontal scroll bar).
+
+We will fix this in the upcoming exercise on box-sizing.
