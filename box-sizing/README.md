@@ -29,3 +29,49 @@ Finally, delete the _border_ property from the #heading section and once again c
 
 As a last step, remove the width property of the #heading-section, which was only there for demonstration purposes. Block level elements like the are sized at 100% of the available width 
 anyways (but without forcing overflow when adding padding and borders).
+
+## The solution
+
+The first thing you should notice when you set the _box-sizing_ property to _border-box_ on your #heading-section rule is that
+the horizontal scroll bar disappears.
+
+```css
+#heading-section {
+    .
+    .
+    box-sizing: border-box;
+}
+```
+
+Examining the element in the inspector box model, you should see that the the content height is reduced to 150px leaving room for the border and the padding within the specified 200px.
+
+Now for fixing it on the entire page we need to add it to every element using the universal selector.
+
+```css
+* {
+    box-sizing: border-box;
+}
+```
+
+You might have had the instinct to add the property to the body element and have it be inherited. This is good instinct
+since the universal selector is an expensive one, having to find each and every element and apply the property to. This is however not possible, since
+the _box-sizing_ property is not inherited, and also would be overridden by browser default for block level elements.
+
+This is one of the few use cases for the universal selector, having something apply site wide that you can't get to otherwise, note that this is different from inheritance. 
+We are separately targeting each and every element.
+
+After removing the border property you should see that the content are now sized at 160px, accounting only for the 40px that the padding requires.
+
+The final CSS after removing the border property and width and adding the universal selector box-sizing.
+
+```css
+* {
+    box-sizing: border-box;
+}
+
+#heading-section {
+    background: #EC9A29;
+    height: 200px;
+    padding: 20px;
+}
+```
