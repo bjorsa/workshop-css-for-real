@@ -30,3 +30,21 @@ Remove the margin of the #heading-section element once more.
 
 Also, as we are on the subject of margins, you might have noticed that we have some margin around all of the content in our main element of our web page.
 This is what the browser default style sheet sets for the body element, go ahead and override that so that we can get rid of the default margin.
+
+## The findings
+
+You should see that the margins of the 2 elements that you examined occupy the same space in the browser window.
+
+In the case of the h2 element, the reason it extends outside of the parent section element is because of the parent and first child collapsing rule above. The margin then overlap with the bottom margin of the #heading-section because of the adjacent sibling rule.
+
+The CSS for the body element should now look like this.
+
+```css
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+}
+```
+
+Note that there is no need to specify a unit for the margin value, since zero is zero in all units.
