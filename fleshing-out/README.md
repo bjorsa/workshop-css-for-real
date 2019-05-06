@@ -1,52 +1,31 @@
-# 18. Footer
+# 19. A new page
 
-## The solution
+## The task
 
-I added a class of _.footer__links_ to the ul element inside the _#footer-section_.
+Create the testimonials page.
 
-```html
-<ul class="footer__links">
-```
+Start by copying all of the material inside the body tag of the main page.
 
-I set the background color of the _#footer-section_ to match the navigation bar at the very top of the page and also added some padding and top margin.
+Remove everything between the #heading-section and the #footer-section.
 
-```css
-#footer-section {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), #EC9A29;
-    padding: 30px;
-    margin-top: 45px;
-}
-```
+Fix the navigation bar links.
 
-Again, since the links are layed out in a list, it needed to loose it's bullet points and any built in padding and margins that it came with.
+Now, we are going to move some of the material from the main.css file into a shared.css file that can be used from both of the pages.
 
-```css
-.footer__links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-```
+Move all of the general styling as well as rules referring directly  to the header and footer into the new shared.css file.
 
-With the text-align property, I moved the link to the center of the footer.
+Add a new link element to the main HTML file, above the one referring to main.css and use it to include shared.css
 
-Getting them on the same line and spacing them was done with:
+Check that your page looks the way it did before.
 
-```css
-.footer__links li {
-    display: inline-block;
-    margin: 0 45px;
-}
+Copy the link elements, except the one referring to main.css and paste it into the head element of the testimonials page. Fix the file paths of the copied links.
 
-```
+Add a new style sheet directly under the testimonials directory and name it testimonials.css and link it into the page.
 
-Finally, the _:active_ and _:hover_ states of the links were styled, this time leaving the border effect out.
+Check the look of the testimonials page by clicking the "Our Customers" link on the navigation bar.
 
-```css
-.footer__links a:hover,
-.footer__links a:active {
-    color: white;
-    border: none;
-}
-``` 
+Now copy the contents of the tesimonials-section.html file and paste it into the testimonials page, between the #heading section and the #footer-section.
+
+Style the new page by adding some spacing for the new section making it look something along the lines of this.
+
+![Testimonials Page](images/testimonials.png)
