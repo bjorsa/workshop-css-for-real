@@ -108,6 +108,30 @@ address {
     margin-left: 10px;
 }
 
+#footer-section {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), #EC9A29;
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer__links li {
+    display: inline-block;
+    margin: 0 45px;
+}
+
+.footer__links a:hover,
+.footer__links a:active {
+    color: white;
+    border: none;
+}
+
 #favourites-section {
     margin-top: 45px;
 }
