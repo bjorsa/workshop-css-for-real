@@ -26,12 +26,12 @@ a {
 
 a:hover,
 a:active {
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid #333 !important;
 }
 
 a.image-link:hover,
 a.image-link:active {
-    border: none;
+    border: none !important;
 }
 
 address {
@@ -64,7 +64,7 @@ address {
 .navigation a:hover,
 .navigation a:active {
     color: white;
-    border-color: white;
+    border-color: white !important;
 }
 
 .navigation__start {
