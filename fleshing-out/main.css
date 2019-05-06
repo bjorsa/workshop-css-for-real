@@ -18,6 +18,19 @@ h6 {
     font-family: Lato, sans-serif;
 }
 
+h2 {
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #EC9A29;
+    content: " ";
+    width: 100px;
+    margin: 30px auto 0;
+}
+
 a {
     text-decoration: none;
     color: #EC9A29;
@@ -36,6 +49,15 @@ a.image-link:active {
 
 address {
     font-style: normal;
+}
+
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #heading-section {
@@ -86,13 +108,31 @@ address {
     margin-left: 10px;
 }
 
+#favourites-section {
+    margin-top: 45px;
+}
+
+.product__images {
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.product__image-item {
+    float: left;
+    width: 25%;
+    background: black;
+}
+
+.product__image-item img {
+    opacity: 0.7;
+    vertical-align: middle;
+    width: 100%;
+}
+
 #retailer-section {
     margin: 45px 0;
     padding: 20px;
-}
-
-#retailer-section h2 {
-    text-align: center;
 }
 
 .retailer__list {
