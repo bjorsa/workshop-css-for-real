@@ -20,3 +20,19 @@ Sticky support is still a bit sketchy across the browsers: https://caniuse.com/#
 ## The task
 
 Add some positioning to the sample html file to make each pokemon name section letter sticky.
+
+## The solution
+
+Simply add the positioning and some distance from the top, when to stick.
+
+```css
+.pokemon__index-letter {
+    color: white;
+    font-weight: bold;
+    background-color: brown;
+    position: sticky;
+    top: 10px;
+}
+```
+
+And that, as they say, is it.
