@@ -62,12 +62,17 @@ address {
 
 #heading-section {
     background: #EC9A29;
-    height: 200px;
+    height: 400px;
+    position: relative;
 }
 
 #heading-section h1 {
     color: white;
-    padding: 20px;
+    font-size: 65px;
+    margin: 0;
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
 }
 
 .navigation {
