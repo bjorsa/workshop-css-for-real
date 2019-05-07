@@ -48,3 +48,49 @@ Increase the font-size of our h1 elements to 65px and remove the padding and mar
 
 By using absolute positioning for our #heading-section h1 element, position it to the left some ways into the page 
 and closer to the bottom.
+
+## The solution
+
+I increased the height of the #heading section to 400px.
+
+```css
+#heading-section {
+    background: #EC9A29;
+    height: 400px;
+}
+```
+
+After increasing the font-size and removing the padding and margins the CSS for our #heading-section h1 level element look like this.
+
+```css
+#heading-section h1 {
+    color: white;
+    font-size: 65px;
+    margin: 0;
+}
+```
+
+To position it closer to the bottom left of the #heading-section we give it an absolute positioning and set the left and bottom properties. 
+
+```css
+#heading-section h1 {
+    color: white;
+    font-size: 65px;
+    margin: 0;
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+}
+```
+
+This alone will not work and will instead position the element relative to the viewport, we need to add some position property value other than static to the containing element as well.
+
+```css
+#heading-section {
+    background: #EC9A29;
+    height: 400px;
+    position: relative;
+}
+```
+
+Note that this works just as well with inline elements, such as the h1 tag as it does with block level elements.
