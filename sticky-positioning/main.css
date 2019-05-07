@@ -29,4 +29,6 @@ div.pokemon__name {
     color: white;
     font-weight: bold;
     background-color: brown;
+    position: sticky;
+    top: 10px;
 }
