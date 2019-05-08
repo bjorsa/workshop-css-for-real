@@ -34,7 +34,7 @@ h2::after {
 a {
     text-decoration: none;
     color: #EC9A29;
-    padding-bottom: 2px;
+    padding-bottom: .2rem;
 }
 
 a:hover,
@@ -62,22 +62,22 @@ address {
 
 #heading-section {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url("../images/pigments-min.jpg") left 0 top 20%/cover no-repeat;
-    height: 400px;
+    height: 33vh;
     position: relative;
 }
 
 #heading-section h1 {
     color: white;
-    font-size: 65px;
+    font-size: 4em;
     margin: 0;
     position: absolute;
-    left: 100px;
-    bottom: 40px;
+    left: 5%;
+    bottom: 10%;
 }
 
 .navigation {
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
-    padding: 20px;
+    padding: 1.3rem;
 }
 
 .navigation a {
@@ -95,12 +95,12 @@ address {
 }
 
 .navigation__start img {
-    height: 30px;
+    height: 2rem;
 }
 
 .navigation__items {
     display: inline-block;
-    margin-left: 45px;
+    margin-left: 3rem;
 }
 
 .navigation__items ul {
@@ -110,18 +110,18 @@ address {
 
 .navigation__items ul > li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: .7rem;
 }
 
 #footer-section::after {
    content: "... This is ugly ...";
    visibility: hidden;
-   padding: 30px 0;
+   padding: 2rem 0;
 }
 
 #footer-section nav {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), #EC9A29;
-    padding: 30px;
+    padding: 2rem;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -137,7 +137,7 @@ address {
 
 .footer__links li {
     display: inline-block;
-    margin: 0 45px;
+    margin: 0 3rem;
 }
 
 .footer__links a:hover,
