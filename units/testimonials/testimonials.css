@@ -1,11 +1,11 @@
 #testimonial-section {
     padding: 20px;
-    margin: 45px auto 0;
+    margin: 3rem auto 0;
     width: 60%;
 }
 
 .testimonial__item {
-    margin-top: 30px;
+    margin-top: 2rem;
     font-size: larger;
     font-style: italic;
 }
