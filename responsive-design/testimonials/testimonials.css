@@ -1,7 +1,6 @@
 #testimonial-section {
     padding: 20px;
     margin: 3rem auto 0;
-    width: 60%;
 }
 
 .testimonial__item {
@@ -16,7 +15,9 @@
 
 .testimonial__image {
     float: left;
-    width: 20%;
+    min-width: 200px;
+    margin-right: 1.3rem;
+    width: 30%;
 }
 
 .testimonial__item--flipped .testimonial__image {
@@ -27,11 +28,13 @@
     width: 100%;
 }
 
-.testimonial__text {
-    margin-left: calc(20% + 20px);
+.testimonial__item--flipped .testimonial__image {
+    margin-left: 1.3rem;
+    margin-right: 0;
 }
 
-.testimonial__item--flipped .testimonial__text {
-    margin-left: 0;
-    margin-right: calc(20% + 20px);
+@media (min-width: 40rem) {
+    #testimonial-section {
+        width: 60%;
+    }
 }

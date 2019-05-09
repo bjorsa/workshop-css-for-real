@@ -23,3 +23,7 @@ The footer also covers some our site, add some margin to the main in shared.css 
 Make sure that the favourite products are displayed 2 on each line directly under each other in mobile view.
 
 Also restyle the customer testimonials to make it look good in mobile.
+
+## The solution
+
+(to be implemented, see the css files directly)
