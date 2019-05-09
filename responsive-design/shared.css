@@ -47,6 +47,10 @@ a.image-link:active {
     border: none;
 }
 
+main {
+    margin-bottom: 6rem;
+}
+
 address {
     font-style: normal;
 }
@@ -62,17 +66,23 @@ address {
 
 #heading-section {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url("../images/pigments-min.jpg") left 0 top 20%/cover no-repeat;
-    height: 33vh;
+    height: 40vh;
     position: relative;
 }
 
 #heading-section h1 {
     color: white;
-    font-size: 4em;
     margin: 0;
     position: absolute;
     left: 5%;
     bottom: 10%;
+}
+
+@media (min-width: 40rem) {
+    #heading-section h1 {
+        font-size: 2em;
+        bottom: 3%;
+    }
 }
 
 .navigation {
@@ -90,33 +100,40 @@ address {
     border-color: white;
 }
 
-.navigation__start {
-    display: inline-block;
-}
-
 .navigation__start img {
     height: 2rem;
 }
 
 .navigation__items {
-    display: inline-block;
-    margin-left: 3rem;
+    text-align: left;
 }
 
 .navigation__items ul {
-    padding: 0;
+    padding: 1rem 0 0 0;
     margin: 0;
 }
 
 .navigation__items ul > li {
     display: inline-block;
+}
+
+.navigation__items ul > li:not(:first-child) {
     margin-left: .7rem;
 }
 
-#footer-section::after {
-   content: "... This is ugly ...";
-   visibility: hidden;
-   padding: 2rem 0;
+@media (min-width: 40rem) {
+    .navigation__start {
+        display: inline-block;
+    }
+
+    .navigation__items {
+        display: inline-block;
+        margin-left: 3rem;
+    }
+
+    .navigation__items ul {
+        padding-top: 0;
+    }
 }
 
 #footer-section nav {
