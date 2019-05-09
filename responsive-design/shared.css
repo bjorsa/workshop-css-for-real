@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #530100;
+    font-family: Lato, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #EC9A29;
+    content: " ";
+    width: 100px;
+    margin: 30px auto 0;
+}
+
+a {
+    text-decoration: none;
+    color: #EC9A29;
+    padding-bottom: .2rem;
+}
+
+a:hover,
+a:active {
+    border-bottom: 3px solid #333;
+}
+
+a.image-link:hover,
+a.image-link:active {
+    border: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#heading-section {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url("../images/pigments-min.jpg") left 0 top 20%/cover no-repeat;
+    height: 33vh;
+    position: relative;
+}
+
+#heading-section h1 {
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+.navigation {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+    padding: 1.3rem;
+}
+
+.navigation a {
+    font-weight: 700;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    border-color: white;
+}
+
+.navigation__start {
+    display: inline-block;
+}
+
+.navigation__start img {
+    height: 2rem;
+}
+
+.navigation__items {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.navigation__items ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation__items ul > li {
+    display: inline-block;
+    margin-left: .7rem;
+}
+
+#footer-section::after {
+   content: "... This is ugly ...";
+   visibility: hidden;
+   padding: 2rem 0;
+}
+
+#footer-section nav {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), #EC9A29;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer__links li {
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+.footer__links a:hover,
+.footer__links a:active {
+    color: white;
+    border: none;
+}
