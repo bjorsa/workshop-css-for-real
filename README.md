@@ -1,5 +1,9 @@
 # CSS for real
 
+Please note that this is work in progress and that everything is not in place, not everyone that should have been attributed with content has been, please be patient with things that are still missing.
+
+This material is to a large extent based on the excellent Udemy course [CSS - The Complete Guide (incl. Flexbox, Grid & Sass)](https://www.udemy.com/css-the-complete-guide-incl-flexbox-grid-sass).
+
 If you're like me and are using CSS on a daily basis, yet find yourself constantly searching for answers on the internet and stack overflow to fix or implement what seems like basic layout issues, this set of exersizes are for you. 
 You might also find this material useful if you're in the process of learning web development and CSS or if you are brushing up on that skillset and find yourself wanting to explore in more detail some of the features of CSS and web layout that you come across.
 
@@ -82,3 +86,4 @@ In addition, I have gathered a set of useful resources that I'm including in thi
 
 
 I have tried to highlight resources again as they become relevant for some particular exersize.
+
